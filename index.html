@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>My Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<title>My Portfolio</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:#fff;
+}
+
+/* Navbar */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:#020617;
+position:sticky;
+top:0;
+}
+
+nav h1{
+color:#38bdf8;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+transition:.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+/* Hero */
+
+.hero{
+height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+flex-direction:column;
+}
+
+.hero h2{
+font-size:45px;
+}
+
+.hero span{
+color:#38bdf8;
+}
+
+.hero p{
+margin:15px 0;
+max-width:500px;
+}
+
+.btn{
+background:#38bdf8;
+padding:12px 25px;
+border-radius:25px;
+text-decoration:none;
+color:black;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+background:white;
+}
+
+/* Sections */
+
+section{
+padding:80px 10%;
+}
+
+/* About */
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:10px;
+}
+
+/* Skills */
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+}
+
+.skill{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+width:150px;
+text-align:center;
+transition:.3s;
+}
+
+.skill:hover{
+transform:translateY(-5px);
+background:#334155;
+}
+
+/* Projects */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.project-card{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+transition:.3s;
+}
+
+.project-card:hover{
+transform:scale(1.05);
+}
+
+/* Contact */
+
+.contact{
+text-align:center;
+}
+
+.contact-icons{
+margin-top:20px;
+}
+
+.contact-icons a{
+margin:10px;
+font-size:25px;
+color:#38bdf8;
+transition:.3s;
+}
+
+.contact-icons a:hover{
+color:white;
+}
+
+/* Footer */
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<!-- Navbar -->
+
+<nav>
+
+<h2 class="logo">MyPortfolio</h2>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+<button id="themeToggle">🌙</button>
+
+</nav>
+
+<!-- HERO SECTION -->
+
+<section id="home" class="hero">
+
+<div class="hero-container">
+
+<div class="hero-text">
+
+<h1>Hello, I'm <span class="name">Valakonda Niharika</span></h1>
+
+<h2 class="typing">Aspiring Web Developer</h2>
+
+<p>Passionate about building modern websites and learning new technologies.</p>
+
+<a href="#projects" class="btn">View My Work</a>
+</div>
+
+</section>
+
+<!-- About -->
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<div class="about">
+
+<img src="image.jpeg" alt="My Profile photo">
+<p>
+I am an aspiring Web Developer passionate about creating modern,
+responsive websites and learning new technologies.
+
+I specialize in building user-friendly interfaces using HTML,
+CSS, and JavaScript. I enjoy solving problems and turning
+ideas into functional digital experiences.
+
+Currently, I am improving my frontend development skills
+and working on real-world projects to strengthen my portfolio.
+</p>
+
+</div>
+
+</section>
+
+<!-- Skills -->
+
+<section id="skills">
+
+<h2 style="text-align:center;margin-bottom:40px;">My Skills</h2>
+
+<div class="skills">
+
+<div class="skill"><i class="fa-brands fa-html5"></i><br>HTML</div>
+
+<div class="skill"><i class="fa-brands fa-css3-alt"></i><br>CSS</div>
+
+<div class="skill"><i class="fa-brands fa-js"></i><br>JavaScript</div>
+
+<div class="skill"><i class="fa-brands fa-github"></i><br>GitHub</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Projects -->
+
+<section id="projects">
+
+<h2 style="text-align:center;margin-bottom:40px;">Projects</h2>
+
+<div class="projects">
+
+<div class="project-card">
+<h3>Landing Page</h3>
+<p>Responsive landing page built using HTML and CSS.</p>
+</div>
+
+<div class="project-card">
+<h3>Portfolio Website</h3>
+<p>Personal portfolio to showcase my skills and projects.</p>
+</div>
+
+<div class="project-card">
+<h3>Future Project</h3>
+<p>More exciting projects coming soon.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+
+<h2 class="contact-title">Contact Me</h2>
+<p class="contact-subtitle">Feel free to connect with me</p>
+
+<div class="contact-icons">
+
+<a href="https://www.linkedin.com/in/niharika-valakonda-5b2325396" target="_blank">
+<i class="fab fa-linkedin"></i>
+</a>
+
+<a href="https://github.com/yourusername" target="_blank">
+<i class="fab fa-github"></i>
+</a>
+
+<a href="mailto:niharikavalakonda8@gmail.com?subject=Portfolio%20Contact&body=Hello%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect.">
+<i class="fas fa-envelope"></i>
+</a>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+<p>Niharika Valakonda | Portfolio</p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
